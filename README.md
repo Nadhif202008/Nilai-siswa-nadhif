@@ -23,7 +23,7 @@ Struktur database terdiri dari 4 tabel utama:
 - `RekapNilai`: Rekap nilai siswa (rata-rata, tertinggi, terendah)
 
 📎 Diagram database tersedia pada file:  
-[DiagramDB](untitled.svg)
+![DiagramDB](untitled.svg)
 
 ---
 
@@ -32,7 +32,7 @@ Struktur database terdiri dari 4 tabel utama:
 Flowchart menggambarkan proses input data, perhitungan nilai, dan keputusan lulus/tidak lulus berdasarkan nilai minimal 75.
 
 📎 Flowchart tersedia pada file:  
-[Flowchart](zzz.svg)
+![Flowchart](zzz.svg)
 
 ---
 
