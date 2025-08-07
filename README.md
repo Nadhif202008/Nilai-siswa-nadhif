@@ -23,7 +23,7 @@ Struktur database terdiri dari 4 tabel utama:
 - `RekapNilai`: Rekap nilai siswa (rata-rata, tertinggi, terendah)
 
 📎 Diagram database tersedia pada file:  
-![DiagramDB](untitled.svg)
+![DiagramDB](Untitled.svg)
 
 ---
 
