@@ -6,21 +6,34 @@ Sistem ini digunakan untuk mencatat dan mengevaluasi nilai siswa berdasarkan mat
 
 ## 📌 Fitur Utama
 
-- Input data siswa (Nama, NIS)
-- Input nilai tiap mata pelajaran
-- Hitung nilai rata-rata, tertinggi, dan terendah
-- Penentuan kelulusan berdasarkan kriteria nilai
+- Input data siswa (Nama, NIS)  
+- Input nilai tiap mata pelajaran  
+- Hitung nilai rata-rata, tertinggi, dan terendah  
+- Penentuan kelulusan berdasarkan kriteria nilai (≥ 75)  
 
 ---
 
-## 🗂️ Struktur Database
+## 👥 Role & Hak Akses
 
-Struktur database terdiri dari 4 tabel utama:
+### 👨‍🏫 Guru
+- Menginput nilai siswa per mata pelajaran  
+- Melihat rekap nilai per siswa & per kelas  
+- Melihat hasil evaluasi (rata-rata, tertinggi, terendah)  
 
-- `Siswa`: Informasi data siswa
-- `MataPelajaran`: Daftar mata pelajaran
-- `Nilai`: Nilai per siswa per mata pelajaran
-- `RekapNilai`: Rekap nilai siswa (rata-rata, tertinggi, terendah)
+### 🧑‍🎓 Siswa
+- Melihat nilai pribadi per mata pelajaran  
+- Melihat status kelulusan (Lulus/Tidak Lulus)  
+- Mengunduh laporan hasil belajar  
+
+### 🛠 Admin
+- Mengelola data master (menambah, mengubah, menghapus data siswa & guru)  
+- Mengelola daftar mata pelajaran  
+- Mengatur kriteria kelulusan (misalnya nilai minimal)  
+- Melihat laporan keseluruhan sistem  
+
+---
+
+## 🗂 Struktur Database
 
 📎 Diagram database tersedia pada file:  
 ![DiagramDB](Untitled.svg)
@@ -35,36 +48,3 @@ Flowchart menggambarkan proses input data, perhitungan nilai, dan keputusan lulu
 ![Flowchart](zzz.svg)
 
 ---
-
-## 🛠️ Teknologi yang Disarankan
-
-- DBMS: MySQL / PostgreSQL / SQLite
-- Frontend: HTML, CSS, JS (opsional)
-- Backend: Node.js / PHP / Python / Laravel / Express
-
----
-
-## 📌 Ketentuan Kelulusan
-
-Seorang siswa dinyatakan **Lulus** jika rata-rata nilai ≥ 75.  
-Jika tidak, maka dinyatakan **Tidak Lulus**.
-
----
-
-## 🧪 Contoh Nilai
-
-| Nama        | NIS       | Mapel          | Nilai |
-|-------------|-----------|----------------|--------|
-| Andi        | 123456789 | Matematika     | 80     |
-| Andi        | 123456789 | IPA            | 90     |
-| Andi        | 123456789 | IPS            | 70     |
-| Andi        | 123456789 | Bahasa Indo    | 85     |
-
-Rata-rata: **81.25** → ✅ Lulus
-
----
-
-## 👨‍💻 Kontributor
-
-- 📌 Dibuat oleh: **[Nama Anda]**
-- 🗓️ Tanggal: Agustus 2025
